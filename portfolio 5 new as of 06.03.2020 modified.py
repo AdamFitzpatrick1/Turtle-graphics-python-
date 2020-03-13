@@ -62,7 +62,7 @@ def stickman(xp, yp):
         minusfiftyforward = -50
         forwardeighty = 80
         widthbetween = 70
-        #for i in range(0,5):
+      
 
 
         t.goto(x,y)
@@ -95,9 +95,7 @@ def stickman(xp, yp):
        
         
         t.penup()
-        #t.forward(thirtypixels)
-        #t.forward(forwardeighty)
-      
+     
                 
                 
         x = x + widthbetween
