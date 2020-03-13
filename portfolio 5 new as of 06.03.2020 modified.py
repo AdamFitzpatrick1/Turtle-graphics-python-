@@ -160,6 +160,7 @@ while True:
         y =  y + speedy
         if y >  300 or y < -300:
                 speedy = speedy * -1
+                
 
         if x >  300 or x < -300:
                 speedx = speedx * -1 
