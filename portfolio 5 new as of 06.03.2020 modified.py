@@ -1,3 +1,4 @@
+#Python turtle graphics animation
 import turtle
 import time 
 screen = turtle.Screen()
@@ -128,26 +129,14 @@ def stickmanstatic():
         t.penup();
         t.forward(15)
         t.pendown()
-        t.penup()
         t.right(90)
         t.forward(30)
-        t.right(-180)
-        t.forward(30)
-        t.forward(30)
-        t.left(180)
-        t.pendown()
-        t.forward(30)
+        t.backward(60)
         
-        t.forward(-30)
-    
-        t.pendown()
       
         
         t.penup()
-        t.forward(30)
-        t.forward(87)
-        t.pendown()
-        
+   
         
         x = x + 70
         
@@ -155,6 +144,8 @@ def stickmanstatic():
         t.sety(y)
        
 
+speedy = 15
+speedx = 20 
 
 while True:
 
@@ -167,10 +158,16 @@ while True:
         time.sleep(0.1)
         screen.update()
         #Do maths here 
-        x =  x + 20 
-        y =  y + 20
-        x = x - 20
-        y = y + -10
+        x =  x + speedx
+        y =  y + speedy
+        if y >  300 or y < -300:
+                speedy = speedy * -1
+
+        if x >  300 or x < -300:
+                speedx = speedx * -1 
+    
+        
+        
        
 
       
